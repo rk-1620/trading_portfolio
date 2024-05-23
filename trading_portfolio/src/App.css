@@ -1,0 +1,154 @@
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Background image styling */
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/bg-img.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  background-attachment: fixed; /* Parallax effect */
+}
+
+/* Container styling */
+.container {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Header container */
+.header-container {
+  width: 100vw;
+  top: 0;
+  padding: 10px;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  display: flex;
+  justify-content: space-between; /* Ensures proper spacing */
+  align-items: center; /* Centers items vertically */
+  z-index: 5;
+}
+
+/* Navbar styling */
+.topnav, .lg {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.lg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align content to the right */
+  width: 100%;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.topnav a, .lg a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover, .lg a:hover {
+  background-color: #ffffff;
+  color: rgb(34, 1, 1);
+  border-radius: 15px; /* Rounded square edges */
+}
+
+/* Main content styling */
+main {
+  margin-top: 100px; /* Space for the fixed header */
+  position: relative;
+}
+
+.page-section {
+  padding: 100px 20px; /* Padding around the content */
+  min-height: 100vh; /* Each section takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06); /* Semi-transparent background */
+}
+
+.page-section:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.05); /* Alternating transparency for visual effect */
+}
+
+.page-section:nth-child(even) {
+  background: rgba(10, 33, 233, 0.04); /* Alternating transparency for visual effect */
+}
+
+.page-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.page-section p {
+  font-size: 18px;
+}
+
+/* Hero content styling */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin: 0 0 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 0 0 20px;
+  max-width: 600px;
+}
+
+.heroic-container {
+  width: 90%;
+  height: 400px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Call-to-action button container */
+.cta-buttons {
+  display: flex;
+  gap: 20px; /* Adds horizontal gap between buttons */
+  margin-bottom: 20px; /* Adds vertical margin below the button group */
+}
+
+/* Call-to-action button styling */
+.cta-button {
+  background-color: #f51515;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.hero-content a:hover {
+  background-color: #FF6F61;
+  color: #030303;
+}
